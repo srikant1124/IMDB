@@ -10,7 +10,7 @@ import UIKit
 
 class AccountViewController: UIViewController {
     var viewModel = AccountViewModel()
-    @IBOutlet weak var signOutButton: UIButton!
+    @IBOutlet weak var signOutButton: ActivityButton!
     @IBOutlet weak var networkError: NotificationView!
     
     override func viewDidLoad() {
@@ -18,9 +18,9 @@ class AccountViewController: UIViewController {
     }
 
     @IBAction func signOut(_ sender: UIButton) {
-        enableSignOut()
+        signOutButton.animate()
         viewModel.sginOut { result in
-            self.enableSignOut(true)
+            self.signOutButton.stopAnimate()
             switch result {
             case .success:
                 self.showLoginScreen()
@@ -35,11 +35,6 @@ class AccountViewController: UIViewController {
             self.networkError.text.text = message
             self.networkError.isHidden = false
         }
-    }
-    
-    func enableSignOut(_ result: Bool = false) {
-        signOutButton.isEnabled = result
-        signOutButton.alpha = result ? 1 : 0.5
     }
     
     func showLoginScreen() {

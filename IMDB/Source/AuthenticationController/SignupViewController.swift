@@ -10,13 +10,14 @@ import UIKit
 
 class SignupViewController: UIViewController {
     
-    @IBOutlet weak var signupButton: UIButton!
+    @IBOutlet weak var signupButton: ActivityButton!
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var conformPassword: UITextField!
     @IBOutlet weak var emailErrorLabel: UILabel!
     @IBOutlet weak var passwordErrorlabel: UILabel!
     
+    @IBOutlet weak var networkErrorLabel: UILabel!
     var viewModel = AccountViewModel()
     @IBOutlet weak var networkError: NotificationView!
     
@@ -28,9 +29,9 @@ class SignupViewController: UIViewController {
     @IBAction func signup(_ sender: UIButton) {
         view.endEditing(true)
         if viewModel.isValidUserForSignUp {
-            enableSignup()
+            signupButton.animate()
             viewModel.sginup { result in
-                self.enableSignup(true)
+                self.signupButton.stopAnimate()
                 switch result {
                 case .success:
                     self.shomHomeScreen()
@@ -55,8 +56,8 @@ class SignupViewController: UIViewController {
     
     func showNetworkError(message: String) {
         DispatchQueue.main.async {
-            self.networkError.text.text = message
-            self.networkError.isHidden = false
+            self.networkErrorLabel.text = message
+            self.networkErrorLabel.isHidden = false
         }
     }
     
@@ -105,15 +106,10 @@ class SignupViewController: UIViewController {
     
     func updateSignUpButton() {
         if viewModel.isValidUserForSignUp {
-            enableSignup(true)
+            signupButton.enableButton(true)
         } else {
-            enableSignup()
+            signupButton.enableButton()
         }
-    }
-    
-    func enableSignup(_ result: Bool = false) {
-        signupButton.isEnabled = result
-        signupButton.alpha = result ? 1 : 0.5
     }
 }
 

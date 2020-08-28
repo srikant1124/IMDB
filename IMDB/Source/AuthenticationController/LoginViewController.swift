@@ -13,21 +13,25 @@ class LoginViewController: UIViewController {
     var viewModel = AccountViewModel()
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordFiled: UITextField!
-    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var loginButton: ActivityButton!
     @IBOutlet weak var mailErrorLabel: UILabel!
     @IBOutlet weak var networkError: NotificationView!
-    
+    @IBOutlet weak var networkErrorLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTextField()
+        emailField.text = "srikant@gmail.com"
+        passwordFiled.text = "testtest"
     }
-
+    
     @IBAction func doLogin(_ sender: UIButton) {
         view.endEditing(true)
         if viewModel.isValidUserForSignIn {
-            enableLoginButton()
+            loginButton.animate()
+            view.isUserInteractionEnabled = false
             viewModel.doLogin { result in
-                self.enableLoginButton(true)
+                self.loginButton.stopAnimate()
+                self.view.isUserInteractionEnabled = true
                 switch result {
                 case .success:
                     self.showTabbar()
@@ -42,8 +46,8 @@ class LoginViewController: UIViewController {
     
     func showNetworkError(message: String) {
          DispatchQueue.main.async {
-            self.networkError.text.text = message
-             self.networkError.isHidden = false
+            self.networkErrorLabel.text = message
+            self.networkErrorLabel.isHidden = false
          }
      }
     
@@ -86,15 +90,10 @@ class LoginViewController: UIViewController {
     
     func updateLoginButton() {
         if viewModel.isValidUserForSignIn {
-            enableLoginButton(true)
+            loginButton.enableButton(true)
         } else {
-            enableLoginButton()
+            loginButton.enableButton()
         }
-    }
-    
-    func enableLoginButton(_ result: Bool = false) {
-        loginButton.isEnabled = result
-        loginButton.alpha = result ? 1 : 0.5
     }
 }
 

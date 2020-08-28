@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		51D41EFC4131FE52DBCC7FA2 /* Pods_IMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A63F4779CF1B4325E6425824 /* Pods_IMDB.framework */; };
+		6521F7A924DFED5C00325C14 /* ActivityButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6521F7A824DFED5C00325C14 /* ActivityButton.swift */; };
+		6521F7AB24DFF1E800325C14 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6521F7AA24DFF1E800325C14 /* CustomButton.swift */; };
+		6521F7B124E008DE00325C14 /* UIcolor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6521F7B024E008DE00325C14 /* UIcolor+Extension.swift */; };
+		653D133524E77863008AA9C1 /* NetworkAppValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653D133424E77863008AA9C1 /* NetworkAppValues.swift */; };
+		653D133C24E779A0008AA9C1 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653D133B24E779A0008AA9C1 /* MovieTableViewCell.swift */; };
 		65433B5D24DD72AC00C5A826 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65433B5C24DD72AC00C5A826 /* AppDelegate.swift */; };
 		65433B5F24DD72AC00C5A826 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65433B5E24DD72AC00C5A826 /* SceneDelegate.swift */; };
 		65433B6424DD72AC00C5A826 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65433B6224DD72AC00C5A826 /* Main.storyboard */; };
@@ -26,6 +31,11 @@
 		65433BA124DE7E9C00C5A826 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65433BA024DE7E9C00C5A826 /* AccountViewModel.swift */; };
 		65433BA324DE7EBC00C5A826 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65433BA224DE7EBC00C5A826 /* User.swift */; };
 		65433BA624DEA40E00C5A826 /* SessionObjectStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65433BA524DEA40E00C5A826 /* SessionObjectStore.swift */; };
+		65A4BA2A24E19AC900FB3A95 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A4BA2924E19AC900FB3A95 /* Movie.swift */; };
+		65A4BA2C24E19F9600FB3A95 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A4BA2B24E19F9600FB3A95 /* NetworkManager.swift */; };
+		65A4BA2E24E1A16100FB3A95 /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A4BA2D24E1A16100FB3A95 /* Movies.swift */; };
+		65A4BA3024E1A27900FB3A95 /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A4BA2F24E1A27900FB3A95 /* MovieListViewModel.swift */; };
+		65A4BA4424E1A5F300FB3A95 /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A4BA4324E1A5F300FB3A95 /* MovieViewModel.swift */; };
 		65F95E7D24DEB01D00289EDB /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F95E7C24DEB01D00289EDB /* AuthManager.swift */; };
 		65F95E9024DEE6F100289EDB /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F95E8F24DEE6F100289EDB /* NotificationView.swift */; };
 		65F95E9224DEE70000289EDB /* NotificationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65F95E9124DEE70000289EDB /* NotificationView.xib */; };
@@ -54,6 +64,11 @@
 		329D6FA6468754315A04768B /* Pods-IMDB-IMDBUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMDB-IMDBUITests.release.xcconfig"; path = "Target Support Files/Pods-IMDB-IMDBUITests/Pods-IMDB-IMDBUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3337C38E580C1D6A93690A83 /* Pods-IMDBTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMDBTests.release.xcconfig"; path = "Target Support Files/Pods-IMDBTests/Pods-IMDBTests.release.xcconfig"; sourceTree = "<group>"; };
 		3F0D6B2D70E4298F93A5CEA1 /* Pods-IMDBTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMDBTests.debug.xcconfig"; path = "Target Support Files/Pods-IMDBTests/Pods-IMDBTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6521F7A824DFED5C00325C14 /* ActivityButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityButton.swift; sourceTree = "<group>"; };
+		6521F7AA24DFF1E800325C14 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		6521F7B024E008DE00325C14 /* UIcolor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIcolor+Extension.swift"; sourceTree = "<group>"; };
+		653D133424E77863008AA9C1 /* NetworkAppValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAppValues.swift; sourceTree = "<group>"; };
+		653D133B24E779A0008AA9C1 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		65433B5924DD72AC00C5A826 /* IMDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IMDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65433B5C24DD72AC00C5A826 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65433B5E24DD72AC00C5A826 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +93,11 @@
 		65433BA024DE7E9C00C5A826 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		65433BA224DE7EBC00C5A826 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		65433BA524DEA40E00C5A826 /* SessionObjectStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionObjectStore.swift; sourceTree = "<group>"; };
+		65A4BA2924E19AC900FB3A95 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		65A4BA2B24E19F9600FB3A95 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		65A4BA2D24E1A16100FB3A95 /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
+		65A4BA2F24E1A27900FB3A95 /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
+		65A4BA4324E1A5F300FB3A95 /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
 		65F95E7C24DEB01D00289EDB /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		65F95E8F24DEE6F100289EDB /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		65F95E9124DEE70000289EDB /* NotificationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationView.xib; sourceTree = "<group>"; };
@@ -117,6 +137,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		653D133624E778A9008AA9C1 /* AccountViewController */ = {
+			isa = PBXGroup;
+			children = (
+				65433B9524DD753600C5A826 /* AccountViewController.swift */,
+			);
+			path = AccountViewController;
+			sourceTree = "<group>";
+		};
+		653D133724E778B7008AA9C1 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				65433B9124DD74D900C5A826 /* TabBarViewController.swift */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		653D133824E778C5008AA9C1 /* SaveViewController */ = {
+			isa = PBXGroup;
+			children = (
+				65433B9B24DDB4FF00C5A826 /* SaveListViewController.swift */,
+			);
+			path = SaveViewController;
+			sourceTree = "<group>";
+		};
+		653D133924E778D8008AA9C1 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6521F7B024E008DE00325C14 /* UIcolor+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		653D133A24E778E7008AA9C1 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				65F95E9124DEE70000289EDB /* NotificationView.xib */,
+				65433B6224DD72AC00C5A826 /* Main.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		65433B5024DD72AC00C5A826 = {
 			isa = PBXGroup;
 			children = (
@@ -172,17 +233,15 @@
 		65433B8C24DD72DA00C5A826 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				65F95E9124DEE70000289EDB /* NotificationView.xib */,
-				65433B6224DD72AC00C5A826 /* Main.storyboard */,
+				653D133A24E778E7008AA9C1 /* UI */,
 				65433BA424DEA3BF00C5A826 /* AuthenticationController */,
-				65433B9324DD751000C5A826 /* HomeViewController.swift */,
-				65433B9524DD753600C5A826 /* AccountViewController.swift */,
-				65433B9124DD74D900C5A826 /* TabBarViewController.swift */,
-				65433B9B24DDB4FF00C5A826 /* SaveListViewController.swift */,
-				65433B9724DD89C200C5A826 /* DesginableView.swift */,
-				65433BA524DEA40E00C5A826 /* SessionObjectStore.swift */,
-				65F95E7C24DEB01D00289EDB /* AuthManager.swift */,
-				65F95E8F24DEE6F100289EDB /* NotificationView.swift */,
+				65A4BA3E24E1A55600FB3A95 /* HomeViewController */,
+				65A4BA3F24E1A56300FB3A95 /* NetworkManager */,
+				653D133624E778A9008AA9C1 /* AccountViewController */,
+				653D133724E778B7008AA9C1 /* TabBarController */,
+				653D133824E778C5008AA9C1 /* SaveViewController */,
+				65A4BA4024E1A58800FB3A95 /* CustomViews */,
+				653D133924E778D8008AA9C1 /* Extension */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -190,6 +249,7 @@
 		65433B8D24DD72E400C5A826 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
+				65433BA524DEA40E00C5A826 /* SessionObjectStore.swift */,
 				65433B5C24DD72AC00C5A826 /* AppDelegate.swift */,
 				65433B5E24DD72AC00C5A826 /* SceneDelegate.swift */,
 			);
@@ -214,6 +274,56 @@
 				65433B8F24DD73E900C5A826 /* LoginViewController.swift */,
 			);
 			path = AuthenticationController;
+			sourceTree = "<group>";
+		};
+		65A4BA3E24E1A55600FB3A95 /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				65433B9324DD751000C5A826 /* HomeViewController.swift */,
+				653D133B24E779A0008AA9C1 /* MovieTableViewCell.swift */,
+				65A4BA4224E1A5D000FB3A95 /* ViewModel */,
+				65A4BA4124E1A5C300FB3A95 /* Model */,
+			);
+			path = HomeViewController;
+			sourceTree = "<group>";
+		};
+		65A4BA3F24E1A56300FB3A95 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				65F95E7C24DEB01D00289EDB /* AuthManager.swift */,
+				653D133424E77863008AA9C1 /* NetworkAppValues.swift */,
+				65A4BA2B24E19F9600FB3A95 /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		65A4BA4024E1A58800FB3A95 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				65F95E8F24DEE6F100289EDB /* NotificationView.swift */,
+				6521F7AA24DFF1E800325C14 /* CustomButton.swift */,
+				6521F7A824DFED5C00325C14 /* ActivityButton.swift */,
+				65433B9724DD89C200C5A826 /* DesginableView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		65A4BA4124E1A5C300FB3A95 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				65A4BA2924E19AC900FB3A95 /* Movie.swift */,
+				65A4BA2D24E1A16100FB3A95 /* Movies.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		65A4BA4224E1A5D000FB3A95 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				65A4BA2F24E1A27900FB3A95 /* MovieListViewModel.swift */,
+				65A4BA4324E1A5F300FB3A95 /* MovieViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		7617516926683B8053908735 /* Pods */ = {
@@ -480,19 +590,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65A4BA2C24E19F9600FB3A95 /* NetworkManager.swift in Sources */,
 				65433B9424DD751000C5A826 /* HomeViewController.swift in Sources */,
 				65433B9224DD74D900C5A826 /* TabBarViewController.swift in Sources */,
+				65A4BA2A24E19AC900FB3A95 /* Movie.swift in Sources */,
 				65433B9A24DD981600C5A826 /* SignupViewController.swift in Sources */,
 				65F95E7D24DEB01D00289EDB /* AuthManager.swift in Sources */,
+				653D133524E77863008AA9C1 /* NetworkAppValues.swift in Sources */,
+				6521F7AB24DFF1E800325C14 /* CustomButton.swift in Sources */,
 				65433BA624DEA40E00C5A826 /* SessionObjectStore.swift in Sources */,
 				65433BA124DE7E9C00C5A826 /* AccountViewModel.swift in Sources */,
 				65433B9624DD753600C5A826 /* AccountViewController.swift in Sources */,
 				65433B9824DD89C200C5A826 /* DesginableView.swift in Sources */,
+				6521F7A924DFED5C00325C14 /* ActivityButton.swift in Sources */,
 				65433B9024DD73E900C5A826 /* LoginViewController.swift in Sources */,
+				653D133C24E779A0008AA9C1 /* MovieTableViewCell.swift in Sources */,
+				6521F7B124E008DE00325C14 /* UIcolor+Extension.swift in Sources */,
 				65F95E9024DEE6F100289EDB /* NotificationView.swift in Sources */,
 				65433B5D24DD72AC00C5A826 /* AppDelegate.swift in Sources */,
 				65433B5F24DD72AC00C5A826 /* SceneDelegate.swift in Sources */,
+				65A4BA3024E1A27900FB3A95 /* MovieListViewModel.swift in Sources */,
 				65433B9C24DDB4FF00C5A826 /* SaveListViewController.swift in Sources */,
+				65A4BA4424E1A5F300FB3A95 /* MovieViewModel.swift in Sources */,
+				65A4BA2E24E1A16100FB3A95 /* Movies.swift in Sources */,
 				65433BA324DE7EBC00C5A826 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

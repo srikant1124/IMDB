@@ -11,7 +11,7 @@ import Firebase
 typealias AuthResponseHandler = (Swift.Result<Bool, Error>) -> Void
 class AuthManager {
     static let share = AuthManager()
-    
+
     func signup(user: User, completion: @escaping AuthResponseHandler) {
         guard let mailId = user.mailId,
             let password = user.password else {
